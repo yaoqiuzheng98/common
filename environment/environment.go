@@ -8,5 +8,5 @@ func GetEnvironment() Environment {
 	case Development.String(), Production.String(), Test.String():
 		return Environment(env)
 	}
-	panic("Environment variable not set")
+	return Development
 }
