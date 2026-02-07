@@ -19,7 +19,7 @@ func GetClient() *Client {
 	return _client
 }
 
-func buildClient() {
+func Init() {
 	_once.Do(func() {
 		consul.Init()
 		client := consul.GetClient()
